@@ -78,7 +78,7 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 - 全アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
 <!-- </div> -->
 
-| **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
+| **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 **DM** | 0.23648 | 0.22807 | 0.24517 |
 **IPW** | 0.11473 | 0.06933 | 0.16282 |
@@ -91,7 +91,7 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 - 男性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
 <!-- </div> -->
 
-| **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
+| **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 **DM** | 0.23882 | 0.22766 | 0.24974
 **IPW** | 0.13472 | 0.09492 | 0.17173
@@ -105,7 +105,7 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 - 女性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
 <!-- </div> -->
 
-| **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
+| **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 | **DM** | 0.23121 | 0.22479 | 0.23845 |
 | **IPW** | 0.07881 | 0.04603 | 0.11242 |
