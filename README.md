@@ -9,11 +9,11 @@
 - プレスリリース: https://corp.zozo.com/news/20200818-11223/
 
 ## Requirements
-obp>=0.2.1
-numpy>=1.18.1
-pandas>=0.25.1
-pyyaml>=5.1
-scikit-learn>=0.23.1
+- obp>=0.2.1
+- numpy>=1.18.1
+- pandas>=0.25.1
+- pyyaml>=5.1
+- scikit-learn>=0.23.1
 
 
 ## Experimental Settings
@@ -73,43 +73,42 @@ done
 relative estimation errorが小さい推定量ほど, behavior policy（旧ロジック）が蓄積したデータを用いて, counterfactual policy（新ロジック）の正確なオフライン評価ができている.
 
 
-<div align="center">
-<div style="text-align: center;">
-全アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-</div>
+<!-- <div align="center">
+<div style="text-align: center;"> -->
+- 全アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
+<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 **DM** | 0.23648 | 0.22807 | 0.24517 |
 **IPW** | 0.11473 | 0.06933 | 0.16282 |
 **DR** | 0.11819 | 0.07161 | 0.16802 |
-</div>
 
 <br>
 
-<div align="center">
-<div style="text-align: center;">
-男性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-</div>
+<!-- <div align="center">
+<div style="text-align: center;"> -->
+- 男性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
+<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 **DM** | 0.23882 | 0.22766 | 0.24974
 **IPW** | 0.13472 | 0.09492 | 0.17173
 **DR** | 0.12034 | 0.07997 | 0.15806
-</div>
+<!-- </div> -->
 
 <br>
 
-<div align="center">
-<div style="text-align: center;">
-女性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-</div>
+<!-- <div align="center">
+<div style="text-align: center;"> -->
+- 女性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
+<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower),95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 | **DM** | 0.23121 | 0.22479 | 0.23845 |
 | **IPW** | 0.07881 | 0.04603 | 0.11242 |
 | **DR** | 0.07863 | 0.04531 | 0.11343 |
-</div>
+<!-- </div> -->
 
