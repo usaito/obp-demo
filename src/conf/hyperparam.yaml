@@ -1,0 +1,4 @@
+logistic_regression:
+  max_iter: 10000
+  C: 1000
+  random_state: 12345

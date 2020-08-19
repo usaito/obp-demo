@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# others
+.DS_Store
+open_bandit_dataset/
+logs/
