@@ -1,11 +1,11 @@
-# Open Bandit Dataset & Pipelineを用いたOPE推定量の推定精度評価
+# Open Bandit Dataset & Pipelineを用いたOPEの性能評価
 
 ## Overview
-2020/8/31にZOZO Tech Blogにて公開されたブログ記事[Off-Policy Evaluationの基礎とZOZO大規模公開実データおよびパッケージ紹介]()で行った簡易実験の実装. 関連する内容の発表を2020/8/27にzoomで開催された[CFML勉強会](https://cfml.connpass.com/event/183154/)でも発表しており, その際に使用した[発表資料]()も参考になるはず. その他研究プロジェクトに関連する要素は以下の通り.
+2020/8/31にZOZO Tech Blogにて公開されたブログ記事[Off-Policy Evaluationの基礎とZOZO大規模公開実データおよびパッケージ紹介]()で行った簡易実験の実装. 関連する内容の発表を2020/8/27にzoomで開催された[CFML勉強会](https://cfml.connpass.com/event/183154/)でも発表しており, その際に使用した[発表資料](https://speakerdeck.com/usaito/off-policy-evaluationfalseji-chu-toopen-bandit-dataset-and-pipelinefalseshao-jie)も参考になるはず. その他研究プロジェクトに関連する要素は以下の通り.
 
 - 論文: https://arxiv.org/abs/2008.07146
 - Open Bandit Pipeline: https://github.com/st-tech/zr-obp
-- Open Bandit Dataset:
+- Open Bandit Dataset: https://research.zozo.com/data.html
 - プレスリリース: https://corp.zozo.com/news/20200818-11223/
 
 ## Requirements
@@ -50,7 +50,6 @@ They should be either 'bts' or 'random'.
 
 
 上述の実験設定に基づき, 以下のコマンドによりOPEの評価を行った (`./src/`にて実行).
-`$random_state`は適当に, `12345`としておいた.
 ```bash
 for campaign in all men women;
 do
@@ -73,10 +72,7 @@ done
 relative estimation errorが小さい推定量ほど, behavior policy（旧ロジック）が蓄積したデータを用いて, counterfactual policy（新ロジック）の正確なオフライン評価ができている.
 
 
-<!-- <div align="center">
-<div style="text-align: center;"> -->
 - 全アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
@@ -86,29 +82,21 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 
 <br>
 
-<!-- <div align="center">
-<div style="text-align: center;"> -->
 - 男性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 **DM** | 0.23882 | 0.22766 | 0.24974
 **IPW** | 0.13472 | 0.09492 | 0.17173
 **DR** | 0.12034 | 0.07997 | 0.15806
-<!-- </div> -->
 
 <br>
 
-<!-- <div align="center">
-<div style="text-align: center;"> -->
 - 女性アイテム向けキャンペーンのデータにおけるOPE推定量の推定精度 (relative estimation error)
-<!-- </div> -->
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
 | **DM** | 0.23121 | 0.22479 | 0.23845 |
 | **IPW** | 0.07881 | 0.04603 | 0.11242 |
 | **DR** | 0.07863 | 0.04531 | 0.11343 |
-<!-- </div> -->
 

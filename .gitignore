@@ -131,4 +131,6 @@ dmypy.json
 # others
 .DS_Store
 open_bandit_dataset/
+obd/
+examples/
 logs/
