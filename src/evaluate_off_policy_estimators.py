@@ -71,6 +71,7 @@ if __name__ == "__main__":
     behavior_policy = args.behavior_policy
     campaign = args.campaign
     random_state = args.random_state
+    np.random.seed(random_state)
     data_path = Path("../open_bandit_dataset")
 
     obd = OpenBanditDataset(

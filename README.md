@@ -51,7 +51,7 @@ They should be either 'bts' or 'random'.
 
 上述の実験設定に基づき, 以下のコマンドによりOPEの評価を行った (`./src/`にて実行).
 ```bash
-for campaign in all men women;
+for campaign in all men women
 do
     python evaluate_off_policy_estimators.py\
         --n_boot_samples 10\
@@ -76,9 +76,9 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
-**DM** | 0.23648 | 0.22807 | 0.24517 |
+**DM** | 0.23193 | 0.23017 | 0.23359 |
 **IPW** | 0.11473 | 0.06933 | 0.16282 |
-**DR** | 0.11819 | 0.07161 | 0.16802 |
+**DR** | 0.11813 | 0.07153 | 0.16774 |
 
 <br>
 
@@ -86,9 +86,9 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
-**DM** | 0.23882 | 0.22766 | 0.24974
+**DM** | 0.21503 | 0.21406 | 0.21599
 **IPW** | 0.13472 | 0.09492 | 0.17173
-**DR** | 0.12034 | 0.07997 | 0.15806
+**DR** | 0.12001 | 0.07989 | 0.15751
 
 <br>
 
@@ -96,7 +96,7 @@ relative estimation errorが小さい推定量ほど, behavior policy（旧ロ�
 
 | **OPE estimators** | mean | 95.0% CI (lower) | 95.0% CI (upper) |
 | :--- | :--- | :---: | :---: |
-| **DM** | 0.23121 | 0.22479 | 0.23845 |
+| **DM** | 0.22614 | 0.22519 | 0.22731 |
 | **IPW** | 0.07881 | 0.04603 | 0.11242 |
-| **DR** | 0.07863 | 0.04531 | 0.11343 |
+| **DR** | 0.07861 | 0.04533 | 0.11327 |
 
