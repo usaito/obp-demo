@@ -9,11 +9,11 @@
 - プレスリリース: https://corp.zozo.com/news/20200818-11223/
 
 ## Requirements
-- obp>=0.2.1
-- numpy>=1.18.1
-- pandas>=0.25.1
-- pyyaml>=5.1
-- scikit-learn>=0.23.1
+- **obp==0.2.1**（要確認）
+- numpy==1.18.1
+- pandas==0.25.1
+- pyyaml==5.1
+- scikit-learn==0.23.1
 
 
 ## Experimental Settings
