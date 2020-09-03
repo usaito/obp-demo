@@ -1,7 +1,7 @@
 # Open Bandit Dataset & Pipelineを用いたOPEの性能評価
 
 ## Overview
-2020/8/31にZOZO Tech Blogにて公開されたブログ記事[Off-Policy Evaluationの基礎とZOZO大規模公開実データおよびパッケージ紹介]()で行った簡易実験の実装. 関連する内容の発表を2020/8/27にzoomで開催された[CFML勉強会](https://cfml.connpass.com/event/183154/)でも発表しており, その際に使用した[発表資料](https://speakerdeck.com/usaito/off-policy-evaluationfalseji-chu-toopen-bandit-dataset-and-pipelinefalseshao-jie)も参考になるはず. その他研究プロジェクトに関連する要素は以下の通り.
+2020/8/31にZOZO Tech Blogにて公開されたブログ記事[Off-Policy Evaluationの基礎とZOZOTOWN大規模公開実データおよびパッケージ紹介](https://techblog.zozo.com/entry/openbanditproject)で行った簡易実験の実装. 関連する内容の発表を2020/8/27にzoomで開催された[CFML勉強会](https://cfml.connpass.com/event/183154/)でも発表しており, その際に使用した[発表資料](https://speakerdeck.com/usaito/off-policy-evaluationfalseji-chu-toopen-bandit-dataset-and-pipelinefalseshao-jie)も参考になるはず. その他研究プロジェクトに関連する要素は以下の通り.
 
 - 論文: https://arxiv.org/abs/2008.07146
 - Open Bandit Pipeline: https://github.com/st-tech/zr-obp
@@ -9,7 +9,7 @@
 - プレスリリース: https://corp.zozo.com/news/20200818-11223/
 
 ## Requirements
-- **obp==0.2.1**（要確認）
+- **obp==0.2.1（要確認）**
 - numpy==1.18.1
 - pandas==0.25.1
 - pyyaml==5.1
